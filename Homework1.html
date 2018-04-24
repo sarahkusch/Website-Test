@@ -1,0 +1,37 @@
+
+
+<style>
+    body{
+        background-image: url(https://media.giphy.com/media/l2JHPB58MjfV8W3K0/giphy.gif);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+    h1 {
+    font-family: Monospace;
+    }
+
+    .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+</style>
+
+
+<form action="/submit-answer" id ="answer">
+
+<div id="all" class="centered">
+<h1> Hi, how are you? </h1>
+<h1>What is you name?</h1>
+
+<input type="text" placeholder="Your name" required id="name">
+
+<button onclick="document.getElementById('all').innerHTML = 'YEAH your name is ' + document.getElementById('name').value">Submit</button>
+
+</div>
+
+</form>
+
